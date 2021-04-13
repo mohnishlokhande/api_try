@@ -4,7 +4,6 @@ import {LOAD_USERS} from '../GraphQL/Queries'
 
 function GetUsers() {
 
-
     const {error, loading, data} =useQuery(LOAD_USERS)
     const [users, setUsers] =useState([])
     useEffect(()=>{
@@ -22,4 +21,4 @@ function GetUsers() {
     )
 }
 
-export default GetUsers
+export default GetUsers;
